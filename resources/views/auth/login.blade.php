@@ -12,7 +12,7 @@
                     @endif
                     <form method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
-                        <h1>{{ trans('panel.site_title') }}</h1>
+                        <h1>Sistema de citas GRIP</h1>
                         <p class="text-muted">{{ trans('global.login') }}</p>
 
                         <div class="input-group mb-3">
@@ -45,7 +45,7 @@
                             <div class="form-check checkbox">
                                 <input class="form-check-input" name="remember" type="checkbox" id="remember" style="vertical-align: middle;" />
                                 <label class="form-check-label" for="remember" style="vertical-align: middle;">
-                                    {{ trans('global.remember_me') }}
+                                    Recordarme
                                 </label>
                             </div>
                         </div>
@@ -53,14 +53,8 @@
                         <div class="row">
                             <div class="col-6">
                                 <button type="submit" class="btn btn-primary px-4">
-                                    {{ trans('global.login') }}
+                                    Ingresar
                                 </button>
-                            </div>
-                            <div class="col-6 text-right">
-                                <a class="btn btn-link px-0" href="{{ route('password.request') }}">
-                                    {{ trans('global.forgot_password') }}
-                                </a>
-
                             </div>
                         </div>
                     </form>

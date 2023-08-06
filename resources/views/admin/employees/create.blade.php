@@ -3,14 +3,14 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.create') }} {{ trans('cruds.employee.title_singular') }}
+        Agregar empleado
     </div>
 
     <div class="card-body">
         <form action="{{ route("admin.employees.store") }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
-                <label for="name">{{ trans('cruds.employee.fields.name') }}*</label>
+                <label for="name">Nombre*</label>
                 <input type="text" id="name" name="name" class="form-control" value="{{ old('name', isset($employee) ? $employee->name : '') }}" required>
                 @if($errors->has('name'))
                     <em class="invalid-feedback">
@@ -22,7 +22,7 @@
                 </p>
             </div>
             <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
-                <label for="email">{{ trans('cruds.employee.fields.email') }}</label>
+                <label for="email">Correo</label>
                 <input type="email" id="email" name="email" class="form-control" value="{{ old('email', isset($employee) ? $employee->email : '') }}">
                 @if($errors->has('email'))
                     <em class="invalid-feedback">
@@ -34,7 +34,7 @@
                 </p>
             </div>
             <div class="form-group {{ $errors->has('phone') ? 'has-error' : '' }}">
-                <label for="phone">{{ trans('cruds.employee.fields.phone') }}</label>
+                <label for="phone">Celular</label>
                 <input type="text" id="phone" name="phone" class="form-control" value="{{ old('phone', isset($employee) ? $employee->phone : '') }}">
                 @if($errors->has('phone'))
                     <em class="invalid-feedback">
@@ -46,7 +46,7 @@
                 </p>
             </div>
             <div class="form-group {{ $errors->has('photo') ? 'has-error' : '' }}">
-                <label for="photo">{{ trans('cruds.employee.fields.photo') }}</label>
+                <label for="photo">Foto</label>
                 <div class="needsclick dropzone" id="photo-dropzone">
 
                 </div>
@@ -60,7 +60,7 @@
                 </p>
             </div>
             <div class="form-group {{ $errors->has('services') ? 'has-error' : '' }}">
-                <label for="services">{{ trans('cruds.employee.fields.services') }}
+                <label for="services">Servicio
                     <span class="btn btn-info btn-xs select-all">{{ trans('global.select_all') }}</span>
                     <span class="btn btn-info btn-xs deselect-all">{{ trans('global.deselect_all') }}</span></label>
                 <select name="services[]" id="services" class="form-control select2" multiple="multiple">

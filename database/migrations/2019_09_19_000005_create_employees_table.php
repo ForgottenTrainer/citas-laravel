@@ -17,6 +17,8 @@ class CreateEmployeesTable extends Migration
 
             $table->string('phone')->nullable();
 
+            $table->string('color');
+
             $table->timestamps();
 
             $table->softDeletes();

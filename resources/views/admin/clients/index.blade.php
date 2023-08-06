@@ -4,14 +4,14 @@
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route("admin.clients.create") }}">
-                {{ trans('global.add') }} {{ trans('cruds.client.title_singular') }}
+                Agregar Cliente
             </a>
         </div>
     </div>
 @endcan
 <div class="card">
     <div class="card-header">
-        {{ trans('cruds.client.title_singular') }} {{ trans('global.list') }}
+       Lista clientes
     </div>
 
     <div class="card-body">
@@ -25,13 +25,13 @@
                         {{ trans('cruds.client.fields.id') }}
                     </th>
                     <th>
-                        {{ trans('cruds.client.fields.name') }}
+                        Nombre
                     </th>
                     <th>
-                        {{ trans('cruds.client.fields.phone') }}
+                        Celular
                     </th>
                     <th>
-                        {{ trans('cruds.client.fields.email') }}
+                        Correo
                     </th>
                     <th>
                         &nbsp;

@@ -4,14 +4,14 @@
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route("admin.appointments.create") }}">
-                {{ trans('global.add') }} {{ trans('cruds.appointment.title_singular') }}
+                Agregar citas
             </a>
         </div>
     </div>
 @endcan
 <div class="card">
     <div class="card-header">
-        {{ trans('cruds.appointment.title_singular') }} {{ trans('global.list') }}
+        Lista de citas
     </div>
 
     <div class="card-body">
@@ -22,29 +22,29 @@
 
                     </th>
                     <th>
-                        {{ trans('cruds.appointment.fields.id') }}
-                        Noc
+                        ID
+                        
                     </th>
                     <th>
-                        {{ trans('cruds.appointment.fields.client') }}
+                        Cliente
                     </th>
                     <th>
-                        {{ trans('cruds.appointment.fields.employee') }}
+                        Empleado
                     </th>
                     <th>
-                        {{ trans('cruds.appointment.fields.start_time') }}
+                        Hora de inicio
                     </th>
                     <th>
-                        {{ trans('cruds.appointment.fields.finish_time') }}
+                        Hora de termino
                     </th>
                     <th>
-                        {{ trans('cruds.appointment.fields.price') }}
+                        Precio
                     </th>
                     <th>
-                        {{ trans('cruds.appointment.fields.comments') }}
+                        Comentario
                     </th>
                     <th>
-                        {{ trans('cruds.appointment.fields.services') }}
+                        Servicios
                     </th>
                     <th>
                         &nbsp;

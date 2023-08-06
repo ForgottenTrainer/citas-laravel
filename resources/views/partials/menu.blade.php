@@ -7,7 +7,7 @@
                     <i class="nav-icon fas fa-fw fa-tachometer-alt">
 
                     </i>
-                    {{ trans('global.dashboard') }}
+                    Panel de control
                 </a>
             </li>
             @can('user_management_access')
@@ -16,7 +16,7 @@
                         <i class="fa-fw fas fa-users nav-icon">
 
                         </i>
-                        {{ trans('cruds.userManagement.title') }}
+                        Administrador de usuarios
                     </a>
                     <ul class="nav-dropdown-items">
                         @can('permission_access')
@@ -25,7 +25,7 @@
                                     <i class="fa-fw fas fa-unlock-alt nav-icon">
 
                                     </i>
-                                    {{ trans('cruds.permission.title') }}
+                                    Permisos
                                 </a>
                             </li>
                         @endcan
@@ -45,7 +45,7 @@
                                     <i class="fa-fw fas fa-user nav-icon">
 
                                     </i>
-                                    {{ trans('cruds.user.title') }}
+                                    Usuarios
                                 </a>
                             </li>
                         @endcan
@@ -58,7 +58,7 @@
                         <i class="fa-fw fas fa-cogs nav-icon">
 
                         </i>
-                        {{ trans('cruds.service.title') }}
+                        Servicios
                     </a>
                 </li>
             @endcan
@@ -68,7 +68,7 @@
                         <i class="fa-fw fas fa-cogs nav-icon">
 
                         </i>
-                        {{ trans('cruds.employee.title') }}
+                        Empleados
                     </a>
                 </li>
             @endcan
@@ -78,7 +78,7 @@
                         <i class="fa-fw fas fa-cogs nav-icon">
 
                         </i>
-                        {{ trans('cruds.client.title') }}
+                        Clientes
                     </a>
                 </li>
             @endcan
@@ -88,7 +88,7 @@
                         <i class="fa-fw fas fa-cogs nav-icon">
 
                         </i>
-                        {{ trans('cruds.appointment.title') }}
+                        Citas
                     </a>
                 </li>
             @endcan
@@ -97,7 +97,7 @@
                     <i class="nav-icon fa-fw fas fa-calendar">
 
                     </i>
-                    {{ trans('global.systemCalendar') }}
+                    Calendario
                 </a>
             </li>
             <li class="nav-item">
@@ -105,7 +105,7 @@
                     <i class="nav-icon fas fa-fw fa-sign-out-alt">
 
                     </i>
-                    {{ trans('global.logout') }}
+                    Cerrar sesion
                 </a>
             </li>
         </ul>

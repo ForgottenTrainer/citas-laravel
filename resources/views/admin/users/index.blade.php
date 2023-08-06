@@ -4,7 +4,7 @@
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route("admin.users.create") }}">
-                {{ trans('global.add') }} {{ trans('cruds.user.title_singular') }}
+                Añadir usuario
             </a>
         </div>
     </div>
@@ -26,13 +26,13 @@
                             {{ trans('cruds.user.fields.id') }}
                         </th>
                         <th>
-                            {{ trans('cruds.user.fields.name') }}
+                            Nombre
                         </th>
                         <th>
-                            {{ trans('cruds.user.fields.email') }}
+                            Correo
                         </th>
                         <th>
-                            {{ trans('cruds.user.fields.email_verified_at') }}
+                            Correo verificado
                         </th>
                         <th>
                             {{ trans('cruds.user.fields.roles') }}

@@ -3,7 +3,7 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.edit') }} {{ trans('cruds.service.title_singular') }}
+        Editar
     </div>
 
     <div class="card-body">
@@ -11,7 +11,7 @@
             @csrf
             @method('PUT')
             <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
-                <label for="name">{{ trans('cruds.service.fields.name') }}*</label>
+                <label for="name">Nombre*</label>
                 <input type="text" id="name" name="name" class="form-control" value="{{ old('name', isset($service) ? $service->name : '') }}" required>
                 @if($errors->has('name'))
                     <em class="invalid-feedback">
@@ -23,7 +23,7 @@
                 </p>
             </div>
             <div class="form-group {{ $errors->has('price') ? 'has-error' : '' }}">
-                <label for="price">{{ trans('cruds.service.fields.price') }}</label>
+                <label for="price">Precio</label>
                 <input type="number" id="price" name="price" class="form-control" value="{{ old('price', isset($service) ? $service->price : '') }}" step="0.01">
                 @if($errors->has('price'))
                     <em class="invalid-feedback">

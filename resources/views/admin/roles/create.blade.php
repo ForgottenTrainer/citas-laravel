@@ -3,14 +3,14 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.create') }} {{ trans('cruds.role.title_singular') }}
+        Crear
     </div>
 
     <div class="card-body">
         <form action="{{ route("admin.roles.store") }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group {{ $errors->has('title') ? 'has-error' : '' }}">
-                <label for="title">{{ trans('cruds.role.fields.title') }}*</label>
+                <label for="title">Titulo*</label>
                 <input type="text" id="title" name="title" class="form-control" value="{{ old('title', isset($role) ? $role->title : '') }}" required>
                 @if($errors->has('title'))
                     <em class="invalid-feedback">
@@ -22,7 +22,7 @@
                 </p>
             </div>
             <div class="form-group {{ $errors->has('permissions') ? 'has-error' : '' }}">
-                <label for="permissions">{{ trans('cruds.role.fields.permissions') }}*
+                <label for="permissions">Permisos*
                     <span class="btn btn-info btn-xs select-all">{{ trans('global.select_all') }}</span>
                     <span class="btn btn-info btn-xs deselect-all">{{ trans('global.deselect_all') }}</span></label>
                 <select name="permissions[]" id="permissions" class="form-control select2" multiple="multiple" required>

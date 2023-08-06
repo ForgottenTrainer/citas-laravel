@@ -4,7 +4,7 @@
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route("admin.services.create") }}">
-                {{ trans('global.add') }} {{ trans('cruds.service.title_singular') }}
+                Agregar servicio
             </a>
         </div>
     </div>
@@ -25,10 +25,10 @@
                         {{ trans('cruds.service.fields.id') }}
                     </th>
                     <th>
-                        {{ trans('cruds.service.fields.name') }}
+                        Nombre
                     </th>
                     <th>
-                        {{ trans('cruds.service.fields.price') }}
+                        Precio
                     </th>
                     <th>
                         &nbsp;
