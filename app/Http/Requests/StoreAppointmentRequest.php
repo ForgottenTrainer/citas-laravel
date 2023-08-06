@@ -6,6 +6,7 @@ use App\Appointment;
 use Gate;
 use Illuminate\Foundation\Http\FormRequest;
 use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Validation\Rule;
 
 class StoreAppointmentRequest extends FormRequest
 {
@@ -36,6 +37,13 @@ class StoreAppointmentRequest extends FormRequest
             ],
             'services'    => [
                 'array',
+            ],
+            'employee_id' => [
+                'required',
+                Rule::unique('appointments')->where(function ($query) {
+                    return $query->where('employee_id', $this->employee_id)
+                        ->where('start_time', $this->start_time);
+                }),
             ],
         ];
     }

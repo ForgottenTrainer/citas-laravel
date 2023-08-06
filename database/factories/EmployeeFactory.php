@@ -21,7 +21,7 @@ class EmployeeFactory extends Factory
      */
     public function definition()
     {
-        $colors = ['red', 'blue', 'green', 'yellow', 'orange', 'purple'];
+        $colors = ['red', 'blue', 'green', '#9a7d0a', 'orange', 'purple'];
 
         return [
             'name' => $this->faker->name,
