@@ -77,6 +77,20 @@
                     {{ trans('cruds.employee.fields.services_helper') }}
                 </p>
             </div>
+
+
+            <div class="color-menu">
+                <label for="photo">Color del psicologo</label>
+                <select class="form-control mt-2 mb-2" name="color">
+                    <option value="red" style="background-color: red; color: white;">Red</option>
+                    <option value="blue" style="background-color: blue; color: white;">Blue</option>
+                    <option value="green" style="background-color: green; color: white;">Green</option>
+                    <option value=" #9a7d0a " style="background-color: yellow; color: black;">Yellow</option>
+                    <option value="orange" style="background-color: orange; color: black;">Orange</option>
+                    <option value="purple" style="background-color: purple; color: white;">Purple</option>
+                </select>
+            </div>
+
             <div>
                 <input class="btn btn-danger" type="submit" value="{{ trans('global.save') }}">
             </div>

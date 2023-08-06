@@ -72,4 +72,7 @@
         filterEventsByDoctor(doctorName);
       });
     </script>
+    <script type="text/javascript">
+
+    </script>
 @stop

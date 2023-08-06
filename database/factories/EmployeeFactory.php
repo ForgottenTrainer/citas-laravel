@@ -21,10 +21,13 @@ class EmployeeFactory extends Factory
      */
     public function definition()
     {
+        $colors = ['red', 'blue', 'green', 'yellow', 'orange', 'purple'];
+
         return [
             'name' => $this->faker->name,
             'email' => $this->faker->email,
             'phone' => $this->faker->phoneNumber,
+            'color' => $this->faker->randomElement($colors),
         ];
     }
 }

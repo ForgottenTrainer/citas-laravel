@@ -22,6 +22,7 @@ class SystemCalendarController extends Controller
             $events[] = [
                 'title' => $appointment->client->name . ' ('.$appointment->employee->name.')',
                 'start' => $appointment->start_time,
+                'color' => $appointment->employee->color,
                 'url'   => route('admin.appointments.edit', $appointment->id),
             ];
         }

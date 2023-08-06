@@ -46,6 +46,18 @@
                     {{ trans('cruds.employee.fields.phone_helper') }}
                 </p>
             </div>
+            <div class="form-group {{ $errors->has('color') ? 'has-error' : '' }}">
+                <label for="color">Color</label>
+                <input type="text" id="color" name="color" class="form-control" value="{{ old('color', isset($employee) ? $employee->color : '') }}">
+                @if($errors->has('color'))
+                    <em class="invalid-feedback">
+                        {{ $errors->first('color') }}
+                    </em>
+                @endif
+                <p class="helper-block">
+                    {{ trans('cruds.employee.fields.color_helper') }}
+                </p>
+            </div>
             <div class="form-group {{ $errors->has('photo') ? 'has-error' : '' }}">
                 <label for="photo">{{ trans('cruds.employee.fields.photo') }}</label>
                 <div class="needsclick dropzone" id="photo-dropzone">

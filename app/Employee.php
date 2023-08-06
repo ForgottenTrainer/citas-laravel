@@ -29,6 +29,7 @@ class Employee extends Model implements HasMedia
         'name',
         'email',
         'phone',
+        'color',
         'created_at',
         'updated_at',
         'deleted_at',

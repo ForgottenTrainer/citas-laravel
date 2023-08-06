@@ -34,6 +34,9 @@
                         {{ trans('cruds.employee.fields.phone') }}
                     </th>
                     <th>
+                        color
+                    </th>
+                    <th>
                         {{ trans('cruds.employee.fields.photo') }}
                     </th>
                     <th>
@@ -98,6 +101,7 @@
 { data: 'name', name: 'name' },
 { data: 'email', name: 'email' },
 { data: 'phone', name: 'phone' },
+{ data: 'color', name: 'color' },
 { data: 'photo', name: 'photo', sortable: false, searchable: false },
 { data: 'services', name: 'services.name' },
 { data: 'actions', name: '{{ trans('global.actions') }}' }

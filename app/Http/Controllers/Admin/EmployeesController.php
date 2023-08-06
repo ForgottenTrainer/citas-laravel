@@ -54,6 +54,9 @@ class EmployeesController extends Controller
             $table->editColumn('phone', function ($row) {
                 return $row->phone ? $row->phone : "";
             });
+            $table->editColumn('color', function ($row) {
+                return $row->color ? $row->color : "";
+            });
             $table->editColumn('photo', function ($row) {
                 if ($photo = $row->photo) {
                     return sprintf(
