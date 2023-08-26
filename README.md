@@ -1,4 +1,4 @@
-# Laravel 8 Appointments System demo
+# Laravel Appointments System demo
 
 - [CoreUI Free theme](https://coreui.io/demo/#main.html) (Bootstrap 4)
 - [FullCalendar library](https://fullcalendar.io/) (version 3)
